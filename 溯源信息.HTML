@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+
+<SCRIPT language=JavaScript> 
+ 
+function password() { 
+ 
+var testV = 1; 
+ 
+var pass1 = prompt('请输入密码:',''); 
+ 
+while (testV < 3) { 
+ 
+if (!pass1) 
+ 
+history.go(-1); 
+ 
+if (pass1 == "666666666") { 
+ 
+alert('密码正确!'); 
+ 
+break; 
+ 
+} 
+ 
+testV+=-1; 
+ 
+var pass1 = prompt('密码错误!请重新输入:'); 
+ 
+} 
+ 
+if (pass1!="password" & testV ==3) 
+ 
+history.go(-1); 
+ 
+return " "; 
+ 
+} 
+ 
+document.write(password()); 
+ 
+</SCRIPT>
+
+<head>
+
+<meta charset="utf-8">
+
+<title>农业溯源信息</title>
+
+</head>
+
+<body>
+
+<h1>来源：</h1>
+
+<h2>产地：</h2>
+
+<h2>生产情况：</h2>
+
+<h2>负责人：</h2>
+
+<p>公司信息：</p>
+
+</body>
+
+</html>
